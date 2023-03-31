@@ -1,0 +1,8 @@
+Results for the extraLargeArray --- insert 2.0131053 s --- append 6.8135 ms
+Results for the largeArray --- insert 17.6603 ms --- append 912.1 μs
+Results for the mediumArray --- insert 346 μs --- append 271.5 μs
+Results for the smallArray --- insert 201 μs --- append 188.3 μs
+Results for the tinyArray --- insert 112.8 μs --- append 295.5 μs
+(s = seconds --- ms = milliseconds --- μs = microseconds)
+
+The run time complexity of the doublerInsert function is O(n). It is linear as we can see by the consistent downward trend in the run time. The doublerAppend is not O(n) but rather O(n^2) as we can see with the last number heading back up going against the downward trend meaning it is not linear. I would have to say that doublerAppend scales better because of its consistently better runtimes as the array length aproaches infinity. The doublerInsert function takes much much longer to run as the array approaches infinity.
